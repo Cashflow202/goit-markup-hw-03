@@ -40,15 +40,35 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
-/* Отступы в секциях */
+/* Параметры секций */
 .section {
   padding: 94px 0;
 }
+/* Центрирование текста */
+.text-center {
+  text-align: center;
+}
+/* Параметры img */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Чёрный бэкграунд */
+.bbg-color {
+  background-color: var(--bg-color);
+}
+/* Визуальное скрытие */
+.wdn-text-hidden {
+  opacity: 0;
+}
+
 /* Обёртка для хедера */
 .header-wrap {
   display: flex;
   align-items: center;
 }
+/* Рамка в хедере */
 .border {
   border-bottom: 1px solid #ececec;
 }
@@ -62,7 +82,6 @@ ul {
 }
 /* Тёмная часть доготипа в хедере */
 .logo {
-  margin-right: 90px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -70,12 +89,15 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+/* Отступ в лого */
+.margin-logo {
+  margin-right: 90px;
+}
 
 /* Ссылка лого в хедере */
 .header-link {
   display: inline-block;
   padding: 32px 0;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -138,13 +160,6 @@ ul {
   border-radius: 4px;
   border: 1px solid transparent;
 }
-/* Выравнивание по центру героя */
-.hero {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--bg-color);
-}
 /* Кнопка Героя */
 .hero-button {
   padding: 10px 32px;
@@ -163,7 +178,6 @@ ul {
 /* Заголовок преимуществ */
 .benefit-title {
   margin-bottom: 10px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -194,6 +208,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+/* Сброс верхнего паддинга в works */
+.works {
+  padding-top: 0;
+}
 /* Заголовок примеров работ */
 .title-text {
   margin-bottom: 50px;
@@ -207,6 +225,12 @@ ul {
 /* Секция Команда  */
 .team {
   background-color: var(--bg-section-color);
+}
+/* Карточка сотрудника */
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-text-color);
 }
 /* Флекс-контейнер для списков команды и работ */
 .team-list,
@@ -225,39 +249,48 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+/* Враппер для employee */
+.employee-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
 /* Имена сотрудников */
 .employee-text {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  /* background-color: var(--white-text-color); */
 }
 /* Фото сотрудников */
 .team-img {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* Должности сотрудников */
 .employee-position {
   color: var(--main-text-color);
+  margin-top: 10px;
 }
-
 /* footer */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
 }
 /* Отступ для лого в футере */
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-
 /* Ссылка на адрес на карте в футере */
 .address-contacts {
   font-style: normal;
@@ -266,7 +299,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
 /* Ховер и фокус ссылки на адрес на карте в футере */
 .address-contacts:hover,
 .address-contacts:focus {
@@ -301,7 +333,10 @@ ul {
   background-color: var(--btn-hover-color);
   color: var(--white-text-color);
 }
-
+/* Падинги кнопок фильтра */
+.btn-all {
+  padding: 6px 22px;
+}
 /* Обёртка для портфолио  */
 .my-portfolio-list {
   display: flex;
@@ -327,15 +362,6 @@ ul {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-/* Заголовок под каждым из проектов в портфолио */
-.portfolio-title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
 /* Основной текст под каждым из проектов в портфолио */
 .portfolio-text {
   /* margin-bottom: 20px; */
@@ -343,4 +369,8 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+/* Портфолио */
+.portfolio {
+  padding-top: 67px;
 }

@@ -265,10 +265,6 @@ img {
   color: var(--title-color);
   /* background-color: var(--white-text-color); */
 }
-/* Фото сотрудников */
-.team-img {
-  /* margin-bottom: 30px; */
-}
 
 /* Должности сотрудников */
 .employee-position {
@@ -360,11 +356,20 @@ img {
 /* Обёртка для текста в портфолио */
 .text-wrap {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
 }
 /* Основной текст под каждым из проектов в портфолио */
 .portfolio-text {
-  /* margin-bottom: 20px; */
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
